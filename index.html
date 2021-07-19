@@ -30,14 +30,39 @@
           </p>
         </div>
         <div class="rightHeader">
-          <form action="" onsubmit="processForm()" class="container" id="formm">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            onsubmit="processForm()"
+            class="container"
+            id="formm"
+          >
             <h1 class="formText">Request Info & Booking</h1>
             <p class="formP">
               Fill this form and we would contact you as soon as we can
             </p>
-            <input type="text" placeholder="Your Name" id="name" required />
-            <input type="text" placeholder="Your Email" id="email" required />
-            <input type="text" placeholder="Phone" id="phone" required />
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              id="name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Your Email"
+              name="email"
+              id="email"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Phone"
+              name="phone"
+              id="phone"
+              required
+            />
 
             <button type="submit" class="btn">Login</button>
           </form>
