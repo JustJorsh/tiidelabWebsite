@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TiideLab</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="header1">
+      <div class="namePhone">
+        <div class="leftNamePhone">
+          <h5 class="nav">Pro Cleaners</h5>
+        </div>
+        <div class="rightNamePhone">
+          <h5 class="nav1">Phone: 1-800-222-3030</h5>
+        </div>
+      </div>
+      <div class="header">
+        <div class="leftHeader">
+          <h3 class="textHeader">Vancouver's Best Home Cleaners</h3>
+          <p class="pHeader">
+            Pro Cleaning is vancouver's best home cleaning service. For the
+            quality maid service Vancouver relies on, book one of our
+            experienced, background-checked professionals to have your home
+            clean in no time
+          </p>
+        </div>
+        <div class="rightHeader">
+          <form action="" onsubmit="processForm()" class="container" id="formm">
+            <h1 class="formText">Request Info & Booking</h1>
+            <p class="formP">
+              Fill this form and we would contact you as soon as we can
+            </p>
+            <input type="text" placeholder="Your Name" id="name" required />
+            <input type="text" placeholder="Your Email" id="email" required />
+            <input type="text" placeholder="Phone" id="phone" required />
+
+            <button type="submit" class="btn">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("formm").addEventListener("load", function () {
+        event.preventDefault();
+      });
+
+      function processForm() {
+        fullname = document.getElementById("name").value;
+        email = document.getElementById("email").value;
+        phone = document.getElementById("phone").value;
+
+        alert(
+          "Your Name is: " +
+            fullname +
+            ", Email Address: " +
+            email +
+            ", phone number: " +
+            phone
+        );
+      }
+    </script>
+    <div class="body">
+      <div class="bodySecondLevel">
+        <div class="clients">
+          <ul>
+            <li>
+              <div class="rounded">
+                <img src="images/user.png" />
+              </div>
+              <h3 class="ho">Trusted Professionals</h3>
+              <p class="hu">
+                Our professionals are experienced, friendly and background
+                checked
+              </p>
+            </li>
+            <li>
+              <div class="rounded">
+                <img
+                  src="images/calendar-icon-web-mobile-vector-sign-button-symbol-year-element-design-calendar-simple-icon-calendar-isolated-icon-calendar-157837097.jpg"
+                />
+              </div>
+              <h3 class="ho">Available Everyday</h3>
+              <p class="hu">
+                We're available to serve you 7 days per week. We'll work around
+                your schedule/p>
+              </p>
+            </li>
+
+            <li>
+              <div class="rounded">
+                <img src="images/index.png" />
+              </div>
+              <h3 class="ho">100% Money-Back Guarentee</h3>
+              <p class="hu">
+                If you're not satisfied, we'll refund all of your money. It's as
+                simple as that
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bodyThird">
+        <h2>What Our Client Says</h2>
+        <div class="clientss">
+          <div class="client1">
+            <div class="clientImg">
+              <img src="images/cal-l.jpg" />
+            </div>
+            <div class="smallCent">
+              <h5>Paulo Pierra</h5>
+              <hr style="border-top: 1px solid rgb(207, 192, 192)" />
+
+              <p>
+                The team was fast and friendly - honestly, my home hasnt been
+                this clean in years
+              </p>
+
+              <img src="images/stars.jpg" />
+            </div>
+          </div>
+          <div class="client1">
+            <div class="clientImg">
+              <img src="images/cal-r.jpg" />
+            </div>
+
+            <h5>Anna Caroline</h5>
+            <div class="smallCent">
+              <hr style="border-top: 1px solid rgb(206, 190, 190)" />
+              <p>
+                it feels so great walking into a fresh clean apartment everyday.
+                these guys makes my place spotless
+              </p>
+              <img src="images/stars.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
